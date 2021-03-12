@@ -184,3 +184,64 @@ $line-space: 22px;
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+  }
+
+  .main-area {
+    background-color: #1F1F1F;
+  }
+
+  .markdown-body {
+    color: #f6f6f6;
+    background-color: #1F1F1F;
+
+    h2 {
+      border-bottom: 1px solid #ececec;
+    }
+
+    hr {
+      border-top: 1px solid #ddd;
+    }
+  
+    code {
+      background-color: #444;
+      color: #cf2c0b;
+    }
+  
+    pre {
+      > code {
+        color: #f8f8f8;
+        background: #333;
+      }
+    }
+  
+    a {
+      color: #3594ec;
+      border-bottom: 1px solid #d1e9ff;
+      &:hover,
+      &:active {
+        color: #6eb0ee;
+      }
+    }
+  
+    table {
+      border: #f6f6f6;
+    }
+    thead {
+      background: #333;
+      color: #f6f6f6;
+    }
+    tr:nth-child(2n) {
+      background-color: #141414;
+    }
+
+    blockquote {
+      color: #f8f8f8;
+      border-left: 4px solid #aaaaaa;
+      background-color: #333;
+    }
+  }
+}
